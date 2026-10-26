@@ -9,7 +9,7 @@ Servidor MCP (stdio) para a [API Tesouro Direto do Radar Opções](https://api.r
 
 ## Instalação
 
-Requer Python 3.12+. Gere o token em https://radaropcoes.com/profile/token.
+Requer Python 3.12+. Gere o token em https://app.radaropcoes.com/profile/token.
 
 **Sem clonar, com [uv](https://docs.astral.sh/uv/):** o `uvx` baixa e executa direto do GitHub. Comando do servidor:
 

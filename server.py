@@ -50,7 +50,7 @@ async def consultar_titulo(nome: str) -> dict:
     """Detalhes de um título do Tesouro Direto: preço unitário de investimento e de resgate, taxas,
     vencimento e investimento mínimo. `nome` é o nome exato, ex.: "Tesouro IPCA+ 2035"."""
     if not RADAR_TOKEN:
-        raise ToolError("RADAR_TOKEN não configurado. Gere um token em https://radaropcoes.com/profile/token.")
+        raise ToolError("RADAR_TOKEN não configurado. Gere um token em https://app.radaropcoes.com/profile/token.")
     try:
         bond = await _get(f"/bonds/{quote(nome, safe='')}", auth=True)
     except httpx.HTTPStatusError as e:
